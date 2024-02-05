@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.shimmer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
+	height: 100%;
+
+	background: linear-gradient(120deg,
+	rgb(120, 120, 120,0) 20%,
+	rgba(120, 120, 120, 0.4) 50%,
+	rgba(120,120,120,0) 80%);
+
+	animation: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer{
+	from {
+		transform: translateX(-200%);
+	}
+	to{
+		transform: translateX(200%);
+	}
+}

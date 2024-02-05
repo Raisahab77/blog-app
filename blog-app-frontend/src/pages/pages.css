@@ -1,0 +1,6 @@
+.container{
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    padding-bottom: 100px;
+}
