@@ -7,5 +7,6 @@ route.post('/register',userController.register);
 route.post('/login',userController.login);
 route.get('/profile',userController.getUser);
 route.get('/logout',userController.logout);
+route.post('/check-user-avbl',userController.checkAvblUser);
 
 module.exports = route;

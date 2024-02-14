@@ -45,7 +45,7 @@ const AddBlog = () => {
   }
 
   return (
-    <div className='flex justify-center'>
+    <div className='w-full flex justify-center'>
         <div className='w-[90%] md:w-[60%] sm:w-[75%] text-center'>
             <input type="text"
                     className='w-full my-2 p-2 bg-neutral-700 text-gray-300 placeholder:text-gray-300'

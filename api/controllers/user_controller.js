@@ -14,7 +14,7 @@ const register = async (req,res)=>{
         })
         await user.save();
         res.send({
-            "status":201,
+            "statusCode":201,
             "msg":"User Created Successfully"
         });
     } catch (error) {
@@ -87,9 +87,25 @@ const getUser = (req,res)=>{
     }
 }
 
+const checkAvblUser = async (req,res)=>{
+    try {
+        const {userName} = req.body;
+        const user = await User.find({userName:userName});
+        if(user.length>0){
+            res.send({is_username_avbl:false});
+        }
+        else{
+            res.send({is_username_avbl:true});
+        }
+    } catch (error) {
+        res.status(500).send({msg:"Server error"});
+    }
+}
+
 module.exports = {
     register,
     login,
     getUser,
-    logout
+    logout,
+    checkAvblUser
 }

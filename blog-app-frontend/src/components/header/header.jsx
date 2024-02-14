@@ -48,11 +48,11 @@ const Header = () => {
     });
   };
 
-  console.log(isAuthenticated);
+  // console.log(isAuthenticated);
 
   return (
     <>
-      <div className="sticky top-0 w-full z-10 bg-white">
+      <div className="w-full bg-gray-100">
         <div className="">
           <div className="flex justify-center items-center">
             <div className='flex justify-between items-center sm:w-[80%] w-[90%] py-4'>
@@ -89,7 +89,7 @@ const Header = () => {
             </div>
           </div>
           
-          <div className="w-full h-2 bg-slate-100">
+          <div className="w-full h-2">
               <div id="myBar" className="h-full bg-[#FF69B4]">
 
               </div>

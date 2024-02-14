@@ -11,10 +11,26 @@ import Register from './components/register/Register';
 import BlogDtl from './components/blog-dtl/blog-dtl';
 import AddBlog from './components/add-blog/AddBlog';
 import {UserContextProvider} from './userContext';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
       <UserContextProvider>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          />
+      {/* Same as */}
+      <ToastContainer />
         <div className="App">
 
           <Router>
